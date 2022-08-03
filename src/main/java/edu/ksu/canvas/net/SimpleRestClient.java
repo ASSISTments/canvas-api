@@ -317,18 +317,18 @@ public class SimpleRestClient implements RestClient {
         }
         if (statusCode == 401) {
             //If the WWW-Authenticate header is set, it is a token problem.
-            //If the header is not present, it is a user permission error.
             //See https://canvas.instructure.com/doc/api/file.oauth.html#storing-access-tokens
             if(httpResponse.containsHeader(HttpHeaders.WWW_AUTHENTICATE)) {
                 LOG.debug("User's token is invalid. It might need refreshing");
                 throw new InvalidOauthTokenException();
             }
+            //Leaving this here at the moment because the docs still say this
             LOG.error("User is not authorized to perform this action");
-            throw new UnauthorizedException();
+            throw new UnauthorizedException(extractErrorMessageFromResponse(httpResponse), String.valueOf(request.getURI()));
         }
         if(statusCode == 403) {
-            LOG.error("Canvas has throttled this request. Requested URL: " + request.getURI());
-            throw new ThrottlingException(extractErrorMessageFromResponse(httpResponse), String.valueOf(request.getURI()));
+          LOG.error("User is not authorized to perform this action");
+          throw new UnauthorizedException(extractErrorMessageFromResponse(httpResponse), String.valueOf(request.getURI()));
         }
         if(statusCode == 404) {
             LOG.error("Object not found in Canvas. Requested URL: " + request.getURI());
