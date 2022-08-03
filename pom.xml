@@ -4,8 +4,14 @@
 
   <groupId>edu.ksu.canvas</groupId>
   <artifactId>canvas-api</artifactId>
-  <version>2.1.0-SNAPSHOT</version>
+  <version>2.1.0-UNAUTHORIZED-SNAPSHOT</version>
   <packaging>jar</packaging>
+  
+  <parent>
+    <groupId>org.assistments</groupId>
+    <artifactId>repoManagementParentPom</artifactId>
+    <version>1.0</version>
+  </parent>
 
   <name>Canvas API Library</name>
   <description>A native Java library to talk to the Canvas REST API</description>
