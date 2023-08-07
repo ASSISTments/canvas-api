@@ -1,11 +1,5 @@
 package edu.ksu.canvas.model;
 
-import edu.ksu.canvas.annotation.CanvasField;
-import edu.ksu.canvas.annotation.CanvasObject;
-import edu.ksu.canvas.impl.GsonResponseParser;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.ArrayList;
@@ -13,9 +7,13 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
+import edu.ksu.canvas.annotation.CanvasField;
+import edu.ksu.canvas.annotation.CanvasObject;
+import edu.ksu.canvas.impl.GsonResponseParser;
 
 public abstract class BaseCanvasModel {
     private static final Logger LOG = LoggerFactory.getLogger(BaseCanvasModel.class);

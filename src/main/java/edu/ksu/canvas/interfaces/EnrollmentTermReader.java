@@ -1,11 +1,10 @@
 package edu.ksu.canvas.interfaces;
 
-import edu.ksu.canvas.model.EnrollmentTerm;
-import edu.ksu.canvas.requestOptions.GetEnrollmentTermOptions;
-
 import java.io.IOException;
 import java.util.List;
 import java.util.Optional;
+import edu.ksu.canvas.model.EnrollmentTerm;
+import edu.ksu.canvas.requestOptions.GetEnrollmentTermOptions;
 
 public interface EnrollmentTermReader  extends CanvasReader<EnrollmentTerm, EnrollmentTermReader> {
 

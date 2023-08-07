@@ -1,9 +1,8 @@
 package edu.ksu.canvas.interfaces;
 
-import edu.ksu.canvas.model.Login;
-
 import java.io.IOException;
 import java.util.List;
+import edu.ksu.canvas.model.Login;
 
 public interface LoginReader extends CanvasReader<Login, LoginReader> {
     /**

@@ -1,5 +1,12 @@
 package edu.ksu.canvas.impl;
 
+import java.io.IOException;
+import java.lang.reflect.Type;
+import java.util.Collections;
+import java.util.List;
+import java.util.Optional;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import com.google.gson.reflect.TypeToken;
 import edu.ksu.canvas.interfaces.CanvasWriter;
 import edu.ksu.canvas.interfaces.MigrationIssueReader;
@@ -7,14 +14,6 @@ import edu.ksu.canvas.model.MigrationIssue;
 import edu.ksu.canvas.net.Response;
 import edu.ksu.canvas.net.RestClient;
 import edu.ksu.canvas.oauth.OauthToken;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import java.io.IOException;
-import java.lang.reflect.Type;
-import java.util.Collections;
-import java.util.List;
-import java.util.Optional;
 
 public class MigrationIssueImpl extends BaseImpl<MigrationIssue, MigrationIssueReader, CanvasWriter> implements MigrationIssueReader {
 

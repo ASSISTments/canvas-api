@@ -6,12 +6,9 @@ import java.net.URLEncoder;
 import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
 import com.google.gson.reflect.TypeToken;
-
 import edu.ksu.canvas.constants.CanvasConstants;
 import edu.ksu.canvas.interfaces.PageReader;
 import edu.ksu.canvas.interfaces.PageWriter;

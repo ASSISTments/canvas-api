@@ -1,10 +1,9 @@
 package edu.ksu.canvas.interfaces;
 
-import edu.ksu.canvas.model.Module;
-import edu.ksu.canvas.requestOptions.ListModulesOptions;
-
 import java.io.IOException;
 import java.util.List;
+import edu.ksu.canvas.model.Module;
+import edu.ksu.canvas.requestOptions.ListModulesOptions;
 
 public interface ModuleReader extends CanvasReader<Module, ModuleReader> {
     /**

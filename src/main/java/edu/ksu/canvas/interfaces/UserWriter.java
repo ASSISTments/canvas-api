@@ -1,11 +1,10 @@
 package edu.ksu.canvas.interfaces;
 
+import java.io.IOException;
+import java.util.Optional;
 import edu.ksu.canvas.exception.InvalidOauthTokenException;
 import edu.ksu.canvas.model.User;
 import edu.ksu.canvas.requestOptions.CreateUserOptions;
-
-import java.io.IOException;
-import java.util.Optional;
 
 public interface UserWriter extends CanvasWriter<User, UserWriter> {
     /**

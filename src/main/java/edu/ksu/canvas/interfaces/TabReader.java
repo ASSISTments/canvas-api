@@ -2,7 +2,6 @@ package edu.ksu.canvas.interfaces;
 
 import java.io.IOException;
 import java.util.List;
-
 import edu.ksu.canvas.model.Tab;
 
 /**

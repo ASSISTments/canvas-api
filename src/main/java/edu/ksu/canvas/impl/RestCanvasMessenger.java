@@ -1,26 +1,23 @@
 package edu.ksu.canvas.impl;
 
 
-import com.google.gson.JsonObject;
-
-import edu.ksu.canvas.exception.InvalidOauthTokenException;
-import edu.ksu.canvas.interfaces.CanvasMessenger;
-import edu.ksu.canvas.net.Response;
-import edu.ksu.canvas.net.RestClient;
-import edu.ksu.canvas.oauth.OauthToken;
-
-import org.apache.commons.lang3.StringUtils;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import javax.validation.constraints.NotNull;
-import java.io.InputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 import java.util.function.Consumer;
+import org.apache.commons.lang3.StringUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import com.google.gson.JsonObject;
+import edu.ksu.canvas.exception.InvalidOauthTokenException;
+import edu.ksu.canvas.interfaces.CanvasMessenger;
+import edu.ksu.canvas.net.Response;
+import edu.ksu.canvas.net.RestClient;
+import edu.ksu.canvas.oauth.OauthToken;
+import jakarta.validation.constraints.NotNull;
 
 /*
  * This class uses the canvas rest api to communicate with canvas

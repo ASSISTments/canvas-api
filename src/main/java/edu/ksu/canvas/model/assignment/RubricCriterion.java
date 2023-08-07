@@ -1,9 +1,8 @@
 package edu.ksu.canvas.model.assignment;
 
-import edu.ksu.canvas.model.BaseCanvasModel;
-
 import java.io.Serializable;
 import java.util.List;
+import edu.ksu.canvas.model.BaseCanvasModel;
 
 public class RubricCriterion extends BaseCanvasModel implements Serializable {
     private static final long serialVersionUID = 1L;

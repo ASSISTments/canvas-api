@@ -3,7 +3,6 @@ package edu.ksu.canvas.model.report;
 import java.io.Serializable;
 import java.net.URI;
 import java.util.Date;
-
 import com.google.gson.annotations.SerializedName;
 
 /**

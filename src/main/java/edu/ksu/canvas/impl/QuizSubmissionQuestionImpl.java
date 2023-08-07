@@ -1,5 +1,11 @@
 package edu.ksu.canvas.impl;
 
+import java.io.IOException;
+import java.lang.reflect.Type;
+import java.util.LinkedList;
+import java.util.List;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import com.google.gson.FieldNamingPolicy;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -11,7 +17,6 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.JsonParser;
 import com.google.gson.reflect.TypeToken;
-
 import edu.ksu.canvas.interfaces.QuizSubmissionQuestionReader;
 import edu.ksu.canvas.interfaces.QuizSubmissionQuestionWriter;
 import edu.ksu.canvas.model.assignment.QuizAnswer;
@@ -22,13 +27,6 @@ import edu.ksu.canvas.net.Response;
 import edu.ksu.canvas.net.RestClient;
 import edu.ksu.canvas.oauth.OauthToken;
 import edu.ksu.canvas.requestOptions.AnswerQuizQuestionOptions;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import java.io.IOException;
-import java.lang.reflect.Type;
-import java.util.LinkedList;
-import java.util.List;
 
 public class QuizSubmissionQuestionImpl extends BaseImpl<QuizSubmissionQuestion, QuizSubmissionQuestionReader, QuizSubmissionQuestionWriter> implements QuizSubmissionQuestionReader, QuizSubmissionQuestionWriter {
     private static final Logger LOG = LoggerFactory.getLogger(QuizSubmissionQuestionImpl.class);

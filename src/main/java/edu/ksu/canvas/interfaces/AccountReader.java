@@ -1,12 +1,11 @@
 package edu.ksu.canvas.interfaces;
 
-import edu.ksu.canvas.model.Account;
-import edu.ksu.canvas.requestOptions.GetSubAccountsOptions;
-import edu.ksu.canvas.requestOptions.ListAccountOptions;
-
 import java.io.IOException;
 import java.util.List;
 import java.util.Optional;
+import edu.ksu.canvas.model.Account;
+import edu.ksu.canvas.requestOptions.GetSubAccountsOptions;
+import edu.ksu.canvas.requestOptions.ListAccountOptions;
 
 /**
  * Methods to read information from and about accounts

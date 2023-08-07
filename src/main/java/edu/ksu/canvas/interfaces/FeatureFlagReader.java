@@ -1,9 +1,8 @@
 package edu.ksu.canvas.interfaces;
 
-import edu.ksu.canvas.model.FeatureFlag;
-
 import java.io.IOException;
 import java.util.Optional;
+import edu.ksu.canvas.model.FeatureFlag;
 
 public interface FeatureFlagReader extends CanvasReader<FeatureFlag, FeatureFlagReader> {
 

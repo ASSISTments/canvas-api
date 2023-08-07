@@ -1,9 +1,8 @@
 package edu.ksu.canvas.model;
 
-import edu.ksu.canvas.annotation.CanvasObject;
-
 import java.io.Serializable;
 import java.util.Date;
+import edu.ksu.canvas.annotation.CanvasObject;
 
 /**
  * API for querying the progress of asynchronous API operations.

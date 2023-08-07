@@ -1,5 +1,10 @@
 package edu.ksu.canvas.impl;
 
+import java.io.IOException;
+import java.lang.reflect.Type;
+import java.util.List;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import com.google.gson.reflect.TypeToken;
 import edu.ksu.canvas.interfaces.CanvasWriter;
 import edu.ksu.canvas.interfaces.SelectiveDataReader;
@@ -7,12 +12,6 @@ import edu.ksu.canvas.model.SelectiveData;
 import edu.ksu.canvas.net.RestClient;
 import edu.ksu.canvas.oauth.OauthToken;
 import edu.ksu.canvas.requestOptions.GetSelectiveDataOptions;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import java.io.IOException;
-import java.lang.reflect.Type;
-import java.util.List;
 
 public class SelectiveDataImpl extends BaseImpl<SelectiveData, SelectiveDataReader, CanvasWriter> implements SelectiveDataReader {
 

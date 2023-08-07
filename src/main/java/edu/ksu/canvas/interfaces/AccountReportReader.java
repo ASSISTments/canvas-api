@@ -3,7 +3,6 @@ package edu.ksu.canvas.interfaces;
 import java.io.IOException;
 import java.util.List;
 import java.util.Optional;
-
 import edu.ksu.canvas.model.report.AccountReport;
 
 public interface AccountReportReader extends CanvasReader<AccountReport, AccountReportReader> {

@@ -1,5 +1,8 @@
 package edu.ksu.canvas.model.assignment;
 
+import java.io.Serializable;
+import java.util.List;
+
 /**
  * Class to represent Canvas quiz question.
  * * See <a href="https://canvas.instructure.com/doc/api/quiz_questions.html#QuizQuestion">Canvas Quiz Question</a> documentation.
@@ -8,9 +11,6 @@ package edu.ksu.canvas.model.assignment;
 import edu.ksu.canvas.annotation.CanvasField;
 import edu.ksu.canvas.annotation.CanvasObject;
 import edu.ksu.canvas.model.BaseCanvasModel;
-
-import java.io.Serializable;
-import java.util.List;
 
 @CanvasObject(postKey = "quizQuestion")
 public class QuizQuestion extends BaseCanvasModel implements Serializable {

@@ -1,9 +1,8 @@
 package edu.ksu.canvas.interfaces;
 
-import edu.ksu.canvas.model.CommunicationChannel;
-
 import java.io.IOException;
 import java.util.List;
+import edu.ksu.canvas.model.CommunicationChannel;
 
 public interface CommunicationChannelReader extends CanvasReader<CommunicationChannel, CommunicationChannelReader> {
     /**

@@ -1,13 +1,12 @@
 package edu.ksu.canvas.model.assignment;
 
-import com.google.common.collect.ImmutableList;
-import edu.ksu.canvas.model.User;
-
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 import java.util.function.Function;
 import java.util.stream.Collectors;
+import com.google.common.collect.ImmutableList;
+import edu.ksu.canvas.model.User;
 
 /**
  * Object to capture the response of Quiz Submission API calls.

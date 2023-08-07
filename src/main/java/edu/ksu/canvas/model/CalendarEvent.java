@@ -1,16 +1,15 @@
 package edu.ksu.canvas.model;
 
-import com.google.gson.annotations.SerializedName;
-import edu.ksu.canvas.annotation.CanvasField;
-import edu.ksu.canvas.annotation.CanvasObject;
-import org.apache.commons.lang3.text.WordUtils;
-
 import java.io.Serializable;
 import java.time.Instant;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
+import org.apache.commons.lang3.text.WordUtils;
+import com.google.gson.annotations.SerializedName;
+import edu.ksu.canvas.annotation.CanvasField;
+import edu.ksu.canvas.annotation.CanvasObject;
 
 /**
  * Class to represent Canvas calendar event.

@@ -1,5 +1,11 @@
 package edu.ksu.canvas.impl;
 
+import java.io.IOException;
+import java.lang.reflect.Type;
+import java.util.Collections;
+import java.util.List;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import com.google.gson.reflect.TypeToken;
 import edu.ksu.canvas.interfaces.QuizQuestionReader;
 import edu.ksu.canvas.interfaces.QuizQuestionWriter;
@@ -8,14 +14,6 @@ import edu.ksu.canvas.net.Response;
 import edu.ksu.canvas.net.RestClient;
 import edu.ksu.canvas.oauth.OauthToken;
 import edu.ksu.canvas.requestOptions.GetQuizQuestionsOptions;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import java.io.IOException;
-import java.lang.reflect.Type;
-import java.util.Collections;
-import java.util.List;
 
 public class QuizQuestionImpl extends BaseImpl<QuizQuestion, QuizQuestionReader, QuizQuestionWriter> implements QuizQuestionReader, QuizQuestionWriter {
     private static final Logger LOG = LoggerFactory.getLogger(QuizQuestionImpl.class);

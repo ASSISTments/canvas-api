@@ -1,9 +1,8 @@
 package edu.ksu.canvas.interfaces;
 
-import edu.ksu.canvas.model.SisImport;
-
 import java.io.IOException;
 import java.util.Optional;
+import edu.ksu.canvas.model.SisImport;
 
 public interface SisImportReader extends CanvasReader<SisImport, SisImportReader> {
     /**

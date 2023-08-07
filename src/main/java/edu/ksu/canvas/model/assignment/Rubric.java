@@ -1,11 +1,10 @@
 package edu.ksu.canvas.model.assignment;
 
+import java.io.Serializable;
+import java.util.List;
 import com.google.gson.annotations.SerializedName;
 import edu.ksu.canvas.annotation.CanvasObject;
 import edu.ksu.canvas.model.BaseCanvasModel;
-
-import java.io.Serializable;
-import java.util.List;
 
 @CanvasObject(postKey = "rubric")
 public class Rubric extends BaseCanvasModel implements Serializable {

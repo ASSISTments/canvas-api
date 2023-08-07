@@ -1,16 +1,14 @@
 package edu.ksu.canvas.interfaces;
 
-import com.google.gson.JsonObject;
-
-import edu.ksu.canvas.exception.InvalidOauthTokenException;
-import edu.ksu.canvas.net.Response;
-import edu.ksu.canvas.oauth.OauthToken;
-
-import java.io.InputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.List;
 import java.util.Map;
 import java.util.function.Consumer;
+import com.google.gson.JsonObject;
+import edu.ksu.canvas.exception.InvalidOauthTokenException;
+import edu.ksu.canvas.net.Response;
+import edu.ksu.canvas.oauth.OauthToken;
 
 public interface CanvasMessenger {
     List<Response> getFromCanvas(OauthToken oauthToken, String url) throws InvalidOauthTokenException, IOException;

@@ -1,10 +1,9 @@
 package edu.ksu.canvas.interfaces;
 
-import edu.ksu.canvas.model.ContentMigration;
-
 import java.io.IOException;
 import java.util.List;
 import java.util.Optional;
+import edu.ksu.canvas.model.ContentMigration;
 
 public interface ContentMigrationReader extends CanvasReader<ContentMigration, ContentMigrationReader> {
     /**

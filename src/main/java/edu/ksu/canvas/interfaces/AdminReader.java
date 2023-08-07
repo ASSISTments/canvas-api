@@ -1,10 +1,9 @@
 package edu.ksu.canvas.interfaces;
 
-import edu.ksu.canvas.model.AccountAdmin;
-import edu.ksu.canvas.requestOptions.ListAccountAdminsOptions;
-
 import java.io.IOException;
 import java.util.List;
+import edu.ksu.canvas.model.AccountAdmin;
+import edu.ksu.canvas.requestOptions.ListAccountAdminsOptions;
 
 public interface AdminReader extends CanvasReader<AccountAdmin, AdminReader> {
     /**

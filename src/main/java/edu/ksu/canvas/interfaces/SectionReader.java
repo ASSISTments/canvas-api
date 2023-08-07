@@ -1,11 +1,10 @@
 package edu.ksu.canvas.interfaces;
 
-import edu.ksu.canvas.enums.SectionIncludes;
-import edu.ksu.canvas.model.Section;
-
 import java.io.IOException;
 import java.util.List;
 import java.util.Optional;
+import edu.ksu.canvas.enums.SectionIncludes;
+import edu.ksu.canvas.model.Section;
 /**
  * Methods to read information from and about sections
  */

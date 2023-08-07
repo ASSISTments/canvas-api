@@ -1,11 +1,10 @@
 package edu.ksu.canvas.interfaces;
 
 
-import edu.ksu.canvas.model.assignment.AssignmentGroup;
-import edu.ksu.canvas.requestOptions.DeleteAssignmentGroupOptions;
-
 import java.io.IOException;
 import java.util.Optional;
+import edu.ksu.canvas.model.assignment.AssignmentGroup;
+import edu.ksu.canvas.requestOptions.DeleteAssignmentGroupOptions;
 
 public interface AssignmentGroupWriter extends CanvasWriter<AssignmentGroup, AssignmentGroupWriter>{
 

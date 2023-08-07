@@ -1,8 +1,8 @@
 package edu.ksu.canvas.model;
 
-import edu.ksu.canvas.annotation.*;
-
 import java.io.Serializable;
+import edu.ksu.canvas.annotation.CanvasField;
+import edu.ksu.canvas.annotation.CanvasObject;
 
 /**
  * Class to represent Canvas user logins. See the

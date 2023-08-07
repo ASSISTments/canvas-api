@@ -1,9 +1,9 @@
 package edu.ksu.canvas.interfaces;
 
-import edu.ksu.canvas.model.assignment.AssignmentOverride;
 import java.io.IOException;
 import java.util.List;
 import java.util.Optional;
+import edu.ksu.canvas.model.assignment.AssignmentOverride;
 
 public interface AssignmentOverrideReader extends CanvasReader<AssignmentOverride, AssignmentOverrideReader> {
     

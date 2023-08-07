@@ -1,14 +1,13 @@
 package edu.ksu.canvas.errors;
 
-import com.google.gson.Gson;
-import edu.ksu.canvas.exception.CanvasException;
-import edu.ksu.canvas.impl.GsonResponseParser;
+import java.io.IOException;
+import java.util.regex.Pattern;
 import org.apache.http.HttpRequest;
 import org.apache.http.HttpResponse;
 import org.apache.http.util.EntityUtils;
-
-import java.io.IOException;
-import java.util.regex.Pattern;
+import com.google.gson.Gson;
+import edu.ksu.canvas.exception.CanvasException;
+import edu.ksu.canvas.impl.GsonResponseParser;
 
 /**
  * The error handler that should be used when creation of a Canvas object fails.

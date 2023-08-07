@@ -1,10 +1,9 @@
 package edu.ksu.canvas.interfaces;
 
-import edu.ksu.canvas.model.Enrollment;
-import edu.ksu.canvas.requestOptions.GetEnrollmentOptions;
-
 import java.io.IOException;
 import java.util.List;
+import edu.ksu.canvas.model.Enrollment;
+import edu.ksu.canvas.requestOptions.GetEnrollmentOptions;
 
 public interface EnrollmentReader extends CanvasReader<Enrollment, EnrollmentReader> {
     /**

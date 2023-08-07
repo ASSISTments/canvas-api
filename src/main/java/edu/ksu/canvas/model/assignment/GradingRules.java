@@ -2,7 +2,6 @@ package edu.ksu.canvas.model.assignment;
 
 import java.io.Serializable;
 import java.util.List;
-
 import edu.ksu.canvas.model.BaseCanvasModel;
 
 /**

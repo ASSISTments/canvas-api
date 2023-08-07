@@ -1,19 +1,17 @@
 package edu.ksu.canvas.impl;
 
+import java.io.IOException;
+import java.lang.reflect.Type;
+import java.util.Collections;
+import java.util.List;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import com.google.gson.reflect.TypeToken;
 import edu.ksu.canvas.interfaces.AccountReportSummaryReader;
 import edu.ksu.canvas.interfaces.AccountReportSummaryWriter;
 import edu.ksu.canvas.model.report.AccountReportSummary;
 import edu.ksu.canvas.net.RestClient;
 import edu.ksu.canvas.oauth.OauthToken;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import java.io.IOException;
-import java.lang.reflect.Type;
-import java.util.Collections;
-import java.util.List;
 
 public class AccountReportSummaryImpl extends BaseImpl<AccountReportSummary, AccountReportSummaryReader, AccountReportSummaryWriter> implements AccountReportSummaryReader, AccountReportSummaryWriter {
     private static final Logger LOG = LoggerFactory.getLogger(AccountReportSummaryImpl.class);

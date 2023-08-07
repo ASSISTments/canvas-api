@@ -3,7 +3,6 @@ package edu.ksu.canvas.interfaces;
 import java.io.IOException;
 import java.util.List;
 import java.util.Optional;
-
 import edu.ksu.canvas.model.assignment.Quiz;
 
 public interface QuizReader extends CanvasReader<Quiz, QuizReader>{

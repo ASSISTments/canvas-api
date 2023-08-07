@@ -1,10 +1,9 @@
 package edu.ksu.canvas.model;
 
+import java.io.Serializable;
 import com.google.gson.annotations.SerializedName;
 import edu.ksu.canvas.annotation.CanvasField;
 import edu.ksu.canvas.annotation.CanvasObject;
-
-import java.io.Serializable;
 
 /**
  * Class to represent Canvas user communication channels. See the

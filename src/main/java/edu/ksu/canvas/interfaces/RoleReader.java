@@ -1,10 +1,9 @@
 package edu.ksu.canvas.interfaces;
 
-import edu.ksu.canvas.model.Role;
-import edu.ksu.canvas.requestOptions.ListRolesOptions;
-
 import java.io.IOException;
 import java.util.List;
+import edu.ksu.canvas.model.Role;
+import edu.ksu.canvas.requestOptions.ListRolesOptions;
 
 public interface RoleReader extends CanvasReader<Role, RoleReader> {
     /**

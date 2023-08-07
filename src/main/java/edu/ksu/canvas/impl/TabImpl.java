@@ -5,7 +5,8 @@ import java.lang.reflect.Type;
 import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
-
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import com.google.gson.reflect.TypeToken;
 import edu.ksu.canvas.interfaces.TabReader;
 import edu.ksu.canvas.interfaces.TabWriter;
@@ -14,8 +15,6 @@ import edu.ksu.canvas.net.Response;
 import edu.ksu.canvas.net.RestClient;
 import edu.ksu.canvas.oauth.OauthToken;
 import edu.ksu.canvas.requestOptions.UpdateCourseTabOptions;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class TabImpl extends BaseImpl<Tab, TabReader, TabWriter> implements TabReader, TabWriter {
 

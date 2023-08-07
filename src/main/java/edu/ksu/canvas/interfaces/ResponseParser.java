@@ -4,7 +4,6 @@ import java.lang.reflect.Type;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
-
 import edu.ksu.canvas.net.Response;
 
 public interface ResponseParser {

@@ -1,10 +1,9 @@
 package edu.ksu.canvas.interfaces;
 
-import edu.ksu.canvas.model.Enrollment;
-import edu.ksu.canvas.requestOptions.UnEnrollOptions;
-
 import java.io.IOException;
 import java.util.Optional;
+import edu.ksu.canvas.model.Enrollment;
+import edu.ksu.canvas.requestOptions.UnEnrollOptions;
 
 public interface EnrollmentWriter extends CanvasWriter<Enrollment, EnrollmentWriter> {
 

@@ -1,9 +1,8 @@
 package edu.ksu.canvas.model.assignment;
 
+import java.io.Serializable;
 import com.google.gson.annotations.SerializedName;
 import edu.ksu.canvas.model.BaseCanvasModel;
-
-import java.io.Serializable;
 
 /**
  * Object to represent a Media Comment which can optionally be embedded inside of a submission comment object

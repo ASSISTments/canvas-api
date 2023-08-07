@@ -1,12 +1,10 @@
 package edu.ksu.canvas.interfaces;
 
+import java.io.IOException;
+import java.util.Optional;
 import edu.ksu.canvas.model.ContentMigration;
 import edu.ksu.canvas.requestOptions.CreateContentMigrationOptions;
 import edu.ksu.canvas.requestOptions.CreateCourseContentMigrationOptions;
-
-import java.io.IOException;
-
-import java.util.Optional;
 
 public interface ContentMigrationWriter extends CanvasWriter<ContentMigration, ContentMigrationWriter>{
 

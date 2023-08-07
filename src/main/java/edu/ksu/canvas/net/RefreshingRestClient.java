@@ -1,15 +1,14 @@
 package edu.ksu.canvas.net;
 
-import edu.ksu.canvas.exception.InvalidOauthTokenException;
-import edu.ksu.canvas.oauth.OauthToken;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import javax.validation.constraints.NotNull;
-import java.io.InputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.List;
 import java.util.Map;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import edu.ksu.canvas.exception.InvalidOauthTokenException;
+import edu.ksu.canvas.oauth.OauthToken;
+import jakarta.validation.constraints.NotNull;
 
 /**
  * This class wraps SimpleRestClient. It provides functionality to

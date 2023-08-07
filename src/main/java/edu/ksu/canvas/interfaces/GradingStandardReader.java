@@ -1,10 +1,9 @@
 package edu.ksu.canvas.interfaces;
 
-import edu.ksu.canvas.model.GradingStandard;
-
 import java.io.IOException;
 import java.util.List;
 import java.util.Optional;
+import edu.ksu.canvas.model.GradingStandard;
 
 public interface GradingStandardReader extends CanvasReader<GradingStandard, GradingStandardReader> {
 

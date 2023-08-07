@@ -1,5 +1,14 @@
 package edu.ksu.canvas.impl;
 
+import java.io.IOException;
+import java.lang.reflect.Type;
+import java.util.Collections;
+import java.util.List;
+import java.util.Map;
+import java.util.Objects;
+import java.util.Optional;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import com.google.gson.reflect.TypeToken;
 import edu.ksu.canvas.interfaces.CalendarReader;
 import edu.ksu.canvas.interfaces.CalendarWriter;
@@ -9,16 +18,6 @@ import edu.ksu.canvas.net.RestClient;
 import edu.ksu.canvas.oauth.OauthToken;
 import edu.ksu.canvas.requestOptions.DeleteCalendarEventOptions;
 import edu.ksu.canvas.requestOptions.ListCalendarEventsOptions;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import java.io.IOException;
-import java.lang.reflect.Type;
-import java.util.Collections;
-import java.util.List;
-import java.util.Map;
-import java.util.Objects;
-import java.util.Optional;
 
 public class CalendarEventImpl extends BaseImpl<CalendarEvent, CalendarReader, CalendarWriter> implements CalendarReader, CalendarWriter {
 

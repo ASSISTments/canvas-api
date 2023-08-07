@@ -1,19 +1,17 @@
 package edu.ksu.canvas.impl;
 
+import java.io.IOException;
+import java.lang.reflect.Type;
+import java.util.List;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import com.google.gson.reflect.TypeToken;
-
-import edu.ksu.canvas.interfaces.*;
+import edu.ksu.canvas.interfaces.AdminReader;
+import edu.ksu.canvas.interfaces.AdminWriter;
 import edu.ksu.canvas.model.AccountAdmin;
 import edu.ksu.canvas.net.RestClient;
 import edu.ksu.canvas.oauth.OauthToken;
 import edu.ksu.canvas.requestOptions.ListAccountAdminsOptions;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import java.io.IOException;
-import java.lang.reflect.Type;
-import java.util.List;
 
 public class AdminImpl extends BaseImpl<AccountAdmin, AdminReader, AdminWriter> implements AdminReader, AdminWriter {
     private static final Logger LOG = LoggerFactory.getLogger(AdminImpl.class);

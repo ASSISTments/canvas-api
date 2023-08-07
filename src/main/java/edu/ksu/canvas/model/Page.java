@@ -2,7 +2,6 @@ package edu.ksu.canvas.model;
 
 import java.io.Serializable;
 import java.util.Date;
-
 import edu.ksu.canvas.annotation.CanvasField;
 import edu.ksu.canvas.annotation.CanvasObject;
 

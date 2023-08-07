@@ -1,9 +1,8 @@
 package edu.ksu.canvas.interfaces;
 
-import edu.ksu.canvas.model.File;
-
 import java.io.IOException;
 import java.util.Optional;
+import edu.ksu.canvas.model.File;
 
 /**
  * This is just used for getting a file after it's been uploaded at the moment.

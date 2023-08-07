@@ -1,5 +1,12 @@
 package edu.ksu.canvas.impl;
 
+import java.io.IOException;
+import java.lang.reflect.Type;
+import java.util.List;
+import java.util.Optional;
+import org.apache.commons.lang3.StringUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import com.google.gson.reflect.TypeToken;
 import edu.ksu.canvas.interfaces.RubricReader;
 import edu.ksu.canvas.interfaces.RubricWriter;
@@ -8,14 +15,6 @@ import edu.ksu.canvas.net.Response;
 import edu.ksu.canvas.net.RestClient;
 import edu.ksu.canvas.oauth.OauthToken;
 import edu.ksu.canvas.requestOptions.GetRubricOptions;
-import org.apache.commons.lang3.StringUtils;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import java.io.IOException;
-import java.lang.reflect.Type;
-import java.util.List;
-import java.util.Optional;
 
 public class RubricImpl extends BaseImpl<Rubric, RubricReader, RubricWriter> implements RubricReader, RubricWriter{
     private static final Logger LOG = LoggerFactory.getLogger(RubricImpl.class);

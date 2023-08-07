@@ -2,7 +2,6 @@ package edu.ksu.canvas.interfaces;
 
 import java.io.IOException;
 import java.util.Optional;
-
 import edu.ksu.canvas.model.ExternalTool;
 
 public interface ExternalToolWriter extends CanvasWriter<ExternalTool, ExternalToolWriter>{

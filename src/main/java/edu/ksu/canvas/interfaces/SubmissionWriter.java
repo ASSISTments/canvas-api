@@ -1,12 +1,11 @@
 package edu.ksu.canvas.interfaces;
 
 
+import java.io.IOException;
+import java.util.Optional;
 import edu.ksu.canvas.model.Progress;
 import edu.ksu.canvas.model.assignment.Submission;
 import edu.ksu.canvas.requestOptions.MultipleSubmissionsOptions;
-
-import java.io.IOException;
-import java.util.Optional;
 
 public interface SubmissionWriter extends CanvasWriter<Submission, SubmissionWriter> {
 

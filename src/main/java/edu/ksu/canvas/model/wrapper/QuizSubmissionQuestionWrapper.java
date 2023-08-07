@@ -1,7 +1,6 @@
 package edu.ksu.canvas.model.wrapper;
 
 import java.util.List;
-
 import edu.ksu.canvas.model.assignment.QuizSubmissionQuestion;
 
 /**

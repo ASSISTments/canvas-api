@@ -1,23 +1,20 @@
 package edu.ksu.canvas.impl;
 
 import static java.util.Collections.emptyMap;
-
-import com.google.gson.reflect.TypeToken;
-
-import edu.ksu.canvas.interfaces.*;
-import edu.ksu.canvas.model.Login;
-import edu.ksu.canvas.net.Response;
-import edu.ksu.canvas.net.RestClient;
-import edu.ksu.canvas.oauth.OauthToken;
-
-import org.apache.commons.lang3.StringUtils;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 import java.io.IOException;
 import java.lang.reflect.Type;
 import java.util.List;
 import java.util.Optional;
+import org.apache.commons.lang3.StringUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import com.google.gson.reflect.TypeToken;
+import edu.ksu.canvas.interfaces.LoginReader;
+import edu.ksu.canvas.interfaces.LoginWriter;
+import edu.ksu.canvas.model.Login;
+import edu.ksu.canvas.net.Response;
+import edu.ksu.canvas.net.RestClient;
+import edu.ksu.canvas.oauth.OauthToken;
 
 public class LoginImpl extends BaseImpl<Login, LoginReader, LoginWriter> implements LoginReader, LoginWriter {
     private static final Logger LOG = LoggerFactory.getLogger(LoginImpl.class);

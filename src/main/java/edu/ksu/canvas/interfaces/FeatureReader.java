@@ -1,9 +1,8 @@
 package edu.ksu.canvas.interfaces;
 
-import edu.ksu.canvas.model.Feature;
-
 import java.io.IOException;
 import java.util.List;
+import edu.ksu.canvas.model.Feature;
 
 public interface FeatureReader extends CanvasReader<Feature, FeatureReader> {
 

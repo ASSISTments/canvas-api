@@ -1,15 +1,14 @@
 package edu.ksu.canvas.model.assignment;
 
+import java.io.Serializable;
+import java.util.Date;
+import java.util.List;
+import java.util.Map;
 import edu.ksu.canvas.annotation.CanvasField;
 import edu.ksu.canvas.annotation.CanvasObject;
 import edu.ksu.canvas.model.BaseCanvasModel;
 import edu.ksu.canvas.model.Course;
 import edu.ksu.canvas.model.User;
-
-import java.io.Serializable;
-import java.util.Date;
-import java.util.List;
-import java.util.Map;
 
 @CanvasObject(postKey = "submission")
 public class Submission extends BaseCanvasModel implements Serializable {

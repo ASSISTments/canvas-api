@@ -1,12 +1,11 @@
 package edu.ksu.canvas.interfaces;
 
-import edu.ksu.canvas.model.User;
-import edu.ksu.canvas.requestOptions.GetUsersInAccountOptions;
-import edu.ksu.canvas.requestOptions.GetUsersInCourseOptions;
-
 import java.io.IOException;
 import java.util.List;
 import java.util.Optional;
+import edu.ksu.canvas.model.User;
+import edu.ksu.canvas.requestOptions.GetUsersInAccountOptions;
+import edu.ksu.canvas.requestOptions.GetUsersInCourseOptions;
 
 public interface UserReader extends CanvasReader<User, UserReader> {
     /**

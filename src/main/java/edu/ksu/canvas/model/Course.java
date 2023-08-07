@@ -1,12 +1,11 @@
 package edu.ksu.canvas.model;
 
-import com.google.gson.annotations.SerializedName;
-import edu.ksu.canvas.annotation.CanvasField;
-import edu.ksu.canvas.annotation.CanvasObject;
-
 import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
+import com.google.gson.annotations.SerializedName;
+import edu.ksu.canvas.annotation.CanvasField;
+import edu.ksu.canvas.annotation.CanvasObject;
 
 /**
  * Class to represent Canvas courses.

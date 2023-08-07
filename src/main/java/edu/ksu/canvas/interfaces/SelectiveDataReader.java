@@ -1,10 +1,9 @@
 package edu.ksu.canvas.interfaces;
 
-import edu.ksu.canvas.model.SelectiveData;
-import edu.ksu.canvas.requestOptions.GetSelectiveDataOptions;
-
 import java.io.IOException;
 import java.util.List;
+import edu.ksu.canvas.model.SelectiveData;
+import edu.ksu.canvas.requestOptions.GetSelectiveDataOptions;
 
 public interface SelectiveDataReader extends CanvasReader<SelectiveData, SelectiveDataReader> {
     /**

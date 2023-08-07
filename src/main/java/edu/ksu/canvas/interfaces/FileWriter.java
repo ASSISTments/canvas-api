@@ -1,11 +1,10 @@
 package edu.ksu.canvas.interfaces;
 
-import edu.ksu.canvas.model.Deposit;
-import edu.ksu.canvas.model.File;
-
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Optional;
+import edu.ksu.canvas.model.Deposit;
+import edu.ksu.canvas.model.File;
 
 /**
  * This just allows you to upload a file once you've requested a file to be uploaded.

@@ -2,11 +2,9 @@ package edu.ksu.canvas.interfaces;
 
 import java.io.IOException;
 import java.util.List;
-
-import javax.validation.constraints.NotNull;
-
 import edu.ksu.canvas.model.assignment.QuizSubmissionQuestion;
 import edu.ksu.canvas.requestOptions.AnswerQuizQuestionOptions;
+import jakarta.validation.constraints.NotNull;
 
 public interface QuizSubmissionQuestionWriter extends CanvasWriter<QuizSubmissionQuestion, QuizSubmissionQuestionWriter> {
     /**

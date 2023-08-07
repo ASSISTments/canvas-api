@@ -1,7 +1,6 @@
 package edu.ksu.canvas.model;
 
 import java.io.Serializable;
-
 import edu.ksu.canvas.annotation.CanvasField;
 import edu.ksu.canvas.annotation.CanvasObject;
 

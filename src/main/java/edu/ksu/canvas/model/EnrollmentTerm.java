@@ -1,10 +1,9 @@
 package edu.ksu.canvas.model;
 
-import edu.ksu.canvas.annotation.CanvasObject;
-
 import java.io.Serializable;
 import java.util.Date;
 import java.util.Map;
+import edu.ksu.canvas.annotation.CanvasObject;
 
 /**
  * Class to represent Canvas enrollment termss.

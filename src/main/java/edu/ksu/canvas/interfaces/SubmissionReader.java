@@ -1,11 +1,10 @@
 package edu.ksu.canvas.interfaces;
 
-import edu.ksu.canvas.model.assignment.Submission;
-import edu.ksu.canvas.requestOptions.GetSubmissionsOptions;
-
 import java.io.IOException;
 import java.util.List;
 import java.util.Optional;
+import edu.ksu.canvas.model.assignment.Submission;
+import edu.ksu.canvas.requestOptions.GetSubmissionsOptions;
 
 public interface SubmissionReader  extends CanvasReader<Submission, SubmissionReader> {
     /**

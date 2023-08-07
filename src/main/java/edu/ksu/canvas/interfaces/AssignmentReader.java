@@ -1,13 +1,12 @@
 package edu.ksu.canvas.interfaces;
 
+import java.io.IOException;
+import java.util.List;
+import java.util.Optional;
 import edu.ksu.canvas.model.assignment.Assignment;
 import edu.ksu.canvas.requestOptions.GetSingleAssignmentOptions;
 import edu.ksu.canvas.requestOptions.ListCourseAssignmentsOptions;
 import edu.ksu.canvas.requestOptions.ListUserAssignmentOptions;
-
-import java.io.IOException;
-import java.util.List;
-import java.util.Optional;
 
 /**
  * Methods to read information from and about Assignments

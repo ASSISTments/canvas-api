@@ -1,5 +1,16 @@
 package edu.ksu.canvas.impl;
 
+import java.io.IOException;
+import java.lang.reflect.Type;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Optional;
+import org.apache.commons.lang3.StringUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import com.google.gson.reflect.TypeToken;
 import edu.ksu.canvas.interfaces.CourseReader;
 import edu.ksu.canvas.interfaces.CourseWriter;
@@ -11,19 +22,12 @@ import edu.ksu.canvas.model.status.Delete;
 import edu.ksu.canvas.net.Response;
 import edu.ksu.canvas.net.RestClient;
 import edu.ksu.canvas.oauth.OauthToken;
-import edu.ksu.canvas.requestOptions.*;
-import org.apache.commons.lang3.StringUtils;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import java.io.IOException;
-import java.lang.reflect.Type;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Optional;
+import edu.ksu.canvas.requestOptions.DeleteCourseOptions;
+import edu.ksu.canvas.requestOptions.GetSingleCourseOptions;
+import edu.ksu.canvas.requestOptions.ListActiveCoursesInAccountOptions;
+import edu.ksu.canvas.requestOptions.ListCurrentUserCoursesOptions;
+import edu.ksu.canvas.requestOptions.ListUserCoursesOptions;
+import edu.ksu.canvas.requestOptions.UploadOptions;
 
 
 public class CourseImpl extends BaseImpl<Course, CourseReader, CourseWriter> implements CourseReader, CourseWriter {

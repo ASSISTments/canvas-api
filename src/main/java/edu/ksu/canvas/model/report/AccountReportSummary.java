@@ -2,7 +2,6 @@ package edu.ksu.canvas.model.report;
 
 import java.io.Serializable;
 import java.util.Map;
-
 import edu.ksu.canvas.model.BaseCanvasModel;
 
 /**

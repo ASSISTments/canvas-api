@@ -1,13 +1,12 @@
 package edu.ksu.canvas.interfaces;
 
+import java.io.IOException;
+import java.util.Optional;
 import edu.ksu.canvas.model.Course;
 import edu.ksu.canvas.model.Deposit;
 import edu.ksu.canvas.model.Progress;
 import edu.ksu.canvas.requestOptions.DeleteCourseOptions;
 import edu.ksu.canvas.requestOptions.UploadOptions;
-
-import java.io.IOException;
-import java.util.Optional;
 
 public interface CourseWriter extends CanvasWriter<Course, CourseWriter> {
     /**

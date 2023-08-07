@@ -1,7 +1,6 @@
 package edu.ksu.canvas.requestOptions;
 
 import java.util.List;
-
 import edu.ksu.canvas.requestOptions.CreateConversationOptions.MediaCommentType;
 
 public class AddMessageToConversationOptions extends BaseOptions {

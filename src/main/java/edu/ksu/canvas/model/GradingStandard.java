@@ -1,9 +1,8 @@
 package edu.ksu.canvas.model;
 
-import edu.ksu.canvas.annotation.CanvasObject;
-
 import java.io.Serializable;
 import java.util.List;
+import edu.ksu.canvas.annotation.CanvasObject;
 
 @CanvasObject(postKey = "")
 public class GradingStandard extends BaseCanvasModel implements Serializable {

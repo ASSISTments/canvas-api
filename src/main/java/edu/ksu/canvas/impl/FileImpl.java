@@ -1,5 +1,13 @@
 package edu.ksu.canvas.impl;
 
+import java.io.IOException;
+import java.io.InputStream;
+import java.lang.reflect.Type;
+import java.util.Collections;
+import java.util.List;
+import java.util.Map;
+import java.util.Optional;
+import java.util.stream.Collectors;
 import com.google.gson.reflect.TypeToken;
 import edu.ksu.canvas.interfaces.FileReader;
 import edu.ksu.canvas.interfaces.FileWriter;
@@ -7,12 +15,6 @@ import edu.ksu.canvas.model.Deposit;
 import edu.ksu.canvas.model.File;
 import edu.ksu.canvas.net.RestClient;
 import edu.ksu.canvas.oauth.OauthToken;
-
-import java.io.IOException;
-import java.io.InputStream;
-import java.lang.reflect.Type;
-import java.util.*;
-import java.util.stream.Collectors;
 
 public class FileImpl extends BaseImpl<File, FileReader, FileWriter> implements FileReader, FileWriter {
 

@@ -1,11 +1,10 @@
 package edu.ksu.canvas.model.assignment;
 
+import java.io.Serializable;
+import java.util.Date;
 import edu.ksu.canvas.annotation.CanvasField;
 import edu.ksu.canvas.model.BaseCanvasModel;
 import edu.ksu.canvas.model.UserDisplay;
-
-import java.io.Serializable;
-import java.util.Date;
 
 public class SubmissionComment extends BaseCanvasModel implements Serializable {
     private static final long serialVersionUID = 1L;

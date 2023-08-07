@@ -2,7 +2,6 @@ package edu.ksu.canvas.model.wrapper;
 
 import java.util.ArrayList;
 import java.util.List;
-
 import edu.ksu.canvas.model.User;
 import edu.ksu.canvas.model.assignment.Quiz;
 import edu.ksu.canvas.model.assignment.QuizSubmission;

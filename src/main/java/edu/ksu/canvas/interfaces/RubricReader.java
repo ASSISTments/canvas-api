@@ -1,10 +1,9 @@
 package edu.ksu.canvas.interfaces;
 
-import edu.ksu.canvas.model.assignment.Rubric;
-import edu.ksu.canvas.requestOptions.GetRubricOptions;
-
 import java.io.IOException;
 import java.util.Optional;
+import edu.ksu.canvas.model.assignment.Rubric;
+import edu.ksu.canvas.requestOptions.GetRubricOptions;
 
 public interface RubricReader extends CanvasReader<Rubric, RubricReader> {
 

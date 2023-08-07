@@ -1,13 +1,12 @@
 package edu.ksu.canvas.util;
 
-import edu.ksu.canvas.constants.CanvasConstants;
-
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
 import java.util.List;
 import java.util.Map;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import edu.ksu.canvas.constants.CanvasConstants;
 
 /*
  * This class transforms a map into a parameter string

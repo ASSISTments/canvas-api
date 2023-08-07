@@ -1,16 +1,15 @@
 package edu.ksu.canvas.impl;
 
+import java.io.IOException;
+import java.lang.reflect.Type;
+import java.util.Collections;
+import java.util.List;
 import com.google.gson.reflect.TypeToken;
 import edu.ksu.canvas.interfaces.FeatureReader;
 import edu.ksu.canvas.interfaces.FeatureWriter;
 import edu.ksu.canvas.model.Feature;
 import edu.ksu.canvas.net.RestClient;
 import edu.ksu.canvas.oauth.OauthToken;
-
-import java.io.IOException;
-import java.lang.reflect.Type;
-import java.util.Collections;
-import java.util.List;
 
 public class FeatureImpl extends BaseImpl<Feature, FeatureReader, FeatureWriter> implements FeatureReader {
 

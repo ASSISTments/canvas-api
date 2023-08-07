@@ -1,10 +1,9 @@
 package edu.ksu.canvas.model;
 
-import edu.ksu.canvas.annotation.CanvasField;
-import edu.ksu.canvas.annotation.CanvasObject;
-
 import java.io.Serializable;
 import java.time.Instant;
+import edu.ksu.canvas.annotation.CanvasField;
+import edu.ksu.canvas.annotation.CanvasObject;
 
 @CanvasObject(postKey = "content_migration")
 public class ContentMigration extends BaseCanvasModel implements Serializable {

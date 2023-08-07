@@ -1,9 +1,8 @@
 package edu.ksu.canvas.interfaces;
 
-import edu.ksu.canvas.model.Account;
-
 import java.io.IOException;
 import java.util.Optional;
+import edu.ksu.canvas.model.Account;
 
 public interface AccountWriter extends CanvasWriter<Account, AccountWriter> {
     /**

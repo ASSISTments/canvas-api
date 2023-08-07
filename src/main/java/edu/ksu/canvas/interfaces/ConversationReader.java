@@ -2,7 +2,6 @@ package edu.ksu.canvas.interfaces;
 
 import java.io.IOException;
 import java.util.Optional;
-
 import edu.ksu.canvas.model.Conversation;
 import edu.ksu.canvas.requestOptions.GetSingleConversationOptions;
 

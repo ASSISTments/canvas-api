@@ -1,5 +1,10 @@
 package edu.ksu.canvas.impl;
 
+import java.io.IOException;
+import java.lang.reflect.Type;
+import java.util.List;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import com.google.gson.reflect.TypeToken;
 import edu.ksu.canvas.interfaces.CanvasWriter;
 import edu.ksu.canvas.interfaces.ModuleReader;
@@ -7,12 +12,6 @@ import edu.ksu.canvas.model.Module;
 import edu.ksu.canvas.net.RestClient;
 import edu.ksu.canvas.oauth.OauthToken;
 import edu.ksu.canvas.requestOptions.ListModulesOptions;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import java.io.IOException;
-import java.lang.reflect.Type;
-import java.util.List;
 
 public class ModuleImpl extends BaseImpl<Module, ModuleReader, CanvasWriter> implements ModuleReader {
     private static final Logger LOG = LoggerFactory.getLogger(ModuleImpl.class);

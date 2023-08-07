@@ -1,8 +1,7 @@
 package edu.ksu.canvas.model.assignment;
 
-import edu.ksu.canvas.model.BaseCanvasModel;
-
 import java.io.Serializable;
+import edu.ksu.canvas.model.BaseCanvasModel;
 
 /**
  * Class to represent the rubric settings values that are returned as part of assignments that have

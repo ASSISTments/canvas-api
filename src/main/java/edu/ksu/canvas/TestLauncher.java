@@ -1,5 +1,9 @@
 package edu.ksu.canvas;
 
+import java.io.IOException;
+import java.util.List;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import edu.ksu.canvas.interfaces.AccountReader;
 import edu.ksu.canvas.interfaces.CourseReader;
 import edu.ksu.canvas.model.Account;
@@ -7,11 +11,6 @@ import edu.ksu.canvas.model.Course;
 import edu.ksu.canvas.oauth.NonRefreshableOauthToken;
 import edu.ksu.canvas.oauth.OauthToken;
 import edu.ksu.canvas.requestOptions.ListCurrentUserCoursesOptions;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import java.io.IOException;
-import java.util.List;
 
 /**
  * A class with a main method that executes a couple of simple read-only requests

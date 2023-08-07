@@ -1,10 +1,9 @@
 package edu.ksu.canvas.interfaces;
 
-import edu.ksu.canvas.model.CalendarEvent;
-import edu.ksu.canvas.requestOptions.DeleteCalendarEventOptions;
-
 import java.io.IOException;
 import java.util.Optional;
+import edu.ksu.canvas.model.CalendarEvent;
+import edu.ksu.canvas.requestOptions.DeleteCalendarEventOptions;
 
 /**
  * Methods to manipulate calendar events in Canvas.

@@ -1,10 +1,9 @@
 package edu.ksu.canvas.interfaces;
 
-import edu.ksu.canvas.model.MigrationIssue;
-
 import java.io.IOException;
 import java.util.List;
 import java.util.Optional;
+import edu.ksu.canvas.model.MigrationIssue;
 
 public interface MigrationIssueReader extends CanvasReader<MigrationIssue, MigrationIssueReader> {
 

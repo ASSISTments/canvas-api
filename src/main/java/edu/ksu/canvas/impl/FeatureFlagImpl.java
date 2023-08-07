@@ -1,5 +1,11 @@
 package edu.ksu.canvas.impl;
 
+import java.io.IOException;
+import java.lang.reflect.Type;
+import java.util.Collections;
+import java.util.List;
+import java.util.Map;
+import java.util.Optional;
 import com.google.gson.reflect.TypeToken;
 import edu.ksu.canvas.interfaces.FeatureFlagReader;
 import edu.ksu.canvas.interfaces.FeatureFlagWriter;
@@ -7,13 +13,6 @@ import edu.ksu.canvas.model.FeatureFlag;
 import edu.ksu.canvas.net.Response;
 import edu.ksu.canvas.net.RestClient;
 import edu.ksu.canvas.oauth.OauthToken;
-
-import java.io.IOException;
-import java.lang.reflect.Type;
-import java.util.Collections;
-import java.util.List;
-import java.util.Map;
-import java.util.Optional;
 
 public class FeatureFlagImpl extends BaseImpl<FeatureFlag, FeatureFlagReader, FeatureFlagWriter> implements FeatureFlagWriter, FeatureFlagReader {
 

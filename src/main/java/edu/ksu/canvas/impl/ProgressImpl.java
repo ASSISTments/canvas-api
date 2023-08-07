@@ -1,20 +1,18 @@
 package edu.ksu.canvas.impl;
 
-import com.google.gson.reflect.TypeToken;
-import edu.ksu.canvas.interfaces.ProgressReader;
-import edu.ksu.canvas.interfaces.ProgressWriter;
-import edu.ksu.canvas.model.Progress;
-
-import edu.ksu.canvas.net.Response;
-import edu.ksu.canvas.net.RestClient;
-import edu.ksu.canvas.oauth.OauthToken;
-
 import java.io.IOException;
 import java.lang.reflect.Type;
 import java.util.Collections;
 import java.util.Optional;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import com.google.gson.reflect.TypeToken;
+import edu.ksu.canvas.interfaces.ProgressReader;
+import edu.ksu.canvas.interfaces.ProgressWriter;
+import edu.ksu.canvas.model.Progress;
+import edu.ksu.canvas.net.Response;
+import edu.ksu.canvas.net.RestClient;
+import edu.ksu.canvas.oauth.OauthToken;
 
 public class ProgressImpl extends BaseImpl<Progress, ProgressReader, ProgressWriter> implements ProgressReader, ProgressWriter {
 

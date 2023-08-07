@@ -1,9 +1,8 @@
 package edu.ksu.canvas.interfaces;
 
-import edu.ksu.canvas.model.Progress;
-
 import java.io.IOException;
 import java.util.Optional;
+import edu.ksu.canvas.model.Progress;
 
 public interface ProgressReader extends CanvasReader<Progress, ProgressReader> {
     /**
