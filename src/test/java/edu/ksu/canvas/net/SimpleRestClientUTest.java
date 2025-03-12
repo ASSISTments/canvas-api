@@ -30,7 +30,7 @@ public class SimpleRestClientUTest extends LocalServerTestBase {
     @Test(expected=UnauthorizedException.class)
     public void http401UnauthorizedThrowsException() throws Exception {
         String url = "/unauthorizedUrl";
-        registerUrlResponse(url, "/SampleJson/oauth/UserUnauthorizedResponse.json", 401, Collections.emptyMap());
+        registerUrlResponse(url, "/SampleJson/oauth/UserUnauthorizedResponse.json", 403, Collections.emptyMap());
 
         restClient.sendApiGet(emptyAdminToken, baseUrl + url, 100, 100);
     }

@@ -4,8 +4,14 @@
 
   <groupId>edu.ksu.canvas</groupId>
   <artifactId>canvas-api</artifactId>
-  <version>2.1.0-SNAPSHOT</version>
+  <version>2.1.0-UNAUTHORIZED-SNAPSHOT</version>
   <packaging>jar</packaging>
+  
+  <parent>
+    <groupId>org.assistments</groupId>
+    <artifactId>repoManagementParentPom</artifactId>
+    <version>1.0</version>
+  </parent>
 
   <name>Canvas API Library</name>
   <description>A native Java library to talk to the Canvas REST API</description>
@@ -42,23 +48,21 @@
     <tag>HEAD</tag>
   </scm>
 
-  <distributionManagement>
-    <repository>
-      <id>ome-appdev-release</id>
-      <url>https://artifactory.ome.k-state.edu/artifactory/ome-appdev-release</url>
-    </repository>
-    <snapshotRepository>
-      <id>ome-appdev-snapshot</id>
-      <url>https://artifactory.ome.k-state.edu/artifactory/ome-appdev-snapshot</url>
-    </snapshotRepository>
-    <site>
-      <id>canvas-api-site</id>
-      <url>file:///var/www/maven-site/canvas-api</url>
-    </site>
-  </distributionManagement>
-
   <build>
     <plugins>
+    <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-source-plugin</artifactId>
+        <version>3.0.1</version>
+        <executions>
+          <execution>
+            <id>attach-sources</id>
+            <goals>
+              <goal>jar-no-fork</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
       <plugin>
         <groupId>org.owasp</groupId>
         <artifactId>dependency-check-maven</artifactId>
